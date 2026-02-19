@@ -1,0 +1,12 @@
+Made for those who take screenshots often and want a more native like screenshot taking experience.
+
+Takes advantage of Android Accessibility API to trigger system level screenshot.
+
+Usage:
+1. Go to Settings -> Accessibility
+2. Find the app and enable the accessibility service
+3. Select navigation bar button or floating icon depending on what you like
+
+If it says that you can't use this setting because of security reasons then you will need to go to app info, click the 3 dot icon and click "Allow restricted settings" to remove the restriction.
+
+Contact: None for now. Create an issue in the linked GitHub repo.

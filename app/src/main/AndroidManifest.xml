@@ -4,17 +4,16 @@
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="Accessibility Button as Screenshot">
-        <!--<activity
+        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.AccessibilityButtonAsScreenshot">
+            android:theme="@android:style/Theme.Material.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>-->
+        </activity>
 
         <service
             android:name=".AppAccessibilityService"

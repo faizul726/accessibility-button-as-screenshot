@@ -21,6 +21,10 @@ class AppAccessibilityService : AccessibilityService() {
         )
     }
 
-    override fun onInterrupt() {}
-    override fun onAccessibilityEvent(event: AccessibilityEvent?) {}
+    override fun onInterrupt() {
+        // do nothing
+    }
+    override fun onAccessibilityEvent(event: AccessibilityEvent?) {
+        // do nothing
+    }
 }
