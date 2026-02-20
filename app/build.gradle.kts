@@ -35,6 +35,7 @@ android {
     buildFeatures.compose = true
 }
 dependencies {
+    implementation("com.github.woheller69:FreeDroidWarn:V1.6")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

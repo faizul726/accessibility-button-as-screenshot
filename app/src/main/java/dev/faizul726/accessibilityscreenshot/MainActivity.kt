@@ -1,6 +1,7 @@
 package dev.faizul726.accessibilityscreenshot
 
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
@@ -19,6 +20,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import dev.faizul726.accessibilityscreenshot.MainActivity.Companion.instance
 import androidx.core.net.toUri
+import org.woheller69.freeDroidWarn.FreeDroidWarn
 
 private const val SOURCE_CODE_LINK = "https://github.com/faizul726/accessibility-button-as-screenshot"
 
@@ -30,6 +32,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         instance = this
         super.onCreate(savedInstanceState)
+        FreeDroidWarn.showWarningOnUpgrade(this, this.packageManager.getPackageInfo(this.packageName, 0).versionCode)
         enableEdgeToEdge()
         setContent {
             MaterialTheme {
